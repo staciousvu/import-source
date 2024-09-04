@@ -1,1 +1,46 @@
+  /* owl carousel */
+/* Cập nhật vị trí, kích thước và kiểu dáng của các nút điều hướng */
+  .owl-nav {
+    position: absolute; /* Đặt vị trí tuyệt đối để dễ dàng điều chỉnh */
+    width: 100%;
+    top: 40%; /* Đặt nút ở giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    
+    display: flex;
+    justify-content: space-between; /* Phân phối đều các nút điều hướng */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
 
+.owl-nav button {
+    /* background-color: #4f4c4c !important; */
+    color: #fff; /* Màu chữ sáng */
+    border: none; /* Loại bỏ viền */
+    width: 50px;
+    border-radius: 50%; /* Làm nút thành hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột dạng bàn tay khi di chuột qua */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+.owl-nav .owl-prev {
+    left: 0; /* Đặt nút trước ở cạnh trái */
+}
+
+.owl-nav .owl-next {
+    right: 0; /* Đặt nút tiếp theo ở cạnh phải */
+}
+
+.owl-nav .owl-prev span, .owl-nav .owl-next span {
+    display: block;
+    font-size: 40px; /* Kích thước của ký tự điều hướng */
+    color: #060606;
+}
+
+/* Điều chỉnh màu nền khi di chuột qua */
+.owl-nav button:hover {
+    background-color: #555; /* Màu nền tối hơn khi di chuột qua */
+}
+  /* owl carousel */
